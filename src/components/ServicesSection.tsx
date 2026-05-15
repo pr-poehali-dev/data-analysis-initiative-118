@@ -1,74 +1,74 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Layout, Palette, Code, Share2, Target, Search } from "lucide-react"
+import { Code2, Layout, Search, Shield, Zap, Layers } from "lucide-react"
 
-const services = [
+const advantages = [
+  {
+    icon: Code2,
+    title: "Чистый код, ваша собственность",
+    description:
+      "Сайт на Joomla — это полноценный продукт, который принадлежит вам. Никакой зависимости от конструктора: меняйте хостинг, дорабатывайте функционал, масштабируйтесь без ограничений платформы.",
+  },
   {
     icon: Layout,
-    title: "Веб-дизайн",
+    title: "Уникальная сетка Gridbox",
     description:
-      "Мы создаем сайты, которые не только визуально привлекательны, но и функциональны, удобны в использовании. В CodeCraft ваш бренд в центре внимания — мы обеспечиваем соответствие онлайн-присутствия целям и ценностям вашего бизнеса.",
-  },
-  {
-    icon: Palette,
-    title: "Графический дизайн",
-    description:
-      "От логотипов до постов в соцсетях — мы создаем креативные графические решения, усиливающие ваш бренд. Наши дизайны уникальны и профессиональны, производя нужное впечатление на целевую аудиторию.",
-  },
-  {
-    icon: Code,
-    title: "Веб-разработка",
-    description:
-      "Мы создаем технически надежные и перспективные сайты. Наша команда обеспечивает надежность, масштабируемость и скорость, помогая вашему бизнесу расти в цифровом пространстве.",
-  },
-  {
-    icon: Share2,
-    title: "Соцсети",
-    description:
-      "Сильное присутствие в социальных сетях сегодня решает многое. Мы поможем создать впечатление с помощью привлекательных визуалов и эффективных стратегий, чтобы ваш бренд оставался заметным.",
-  },
-  {
-    icon: Target,
-    title: "Результат",
-    description:
-      "В CodeCraft мы нацелены на успех. Наш подход всегда направлен на достижение измеримых результатов, способствующих росту вашего бизнеса. Вместе находим то, что действительно работает.",
+      "Мы используем Gridbox — профессиональный page-builder с пиксельной точностью вёрстки. Каждый сайт имеет индивидуальный UX/UI-дизайн, а не типовой шаблон из каталога.",
   },
   {
     icon: Search,
-    title: "SEO",
+    title: "SEO-старт с первого дня",
     description:
-      "Видимость в поиске критически важна. Мы оптимизируем сайт с применением современных SEO-техник, чтобы вы были выше в Google и целевая аудитория легко вас находила.",
+      "Семантическое ядро, корректные мета-теги, микроразметка Schema.org, оптимизация скорости — сайт технически готов к индексации с момента запуска. Органический трафик начинает расти сразу.",
+  },
+  {
+    icon: Zap,
+    title: "Скорость и конверсия",
+    description:
+      "PageSpeed 90+, оптимизированные изображения, кэширование и CDN. Быстрый сайт — это не только UX, но и конверсия: каждая лишняя секунда загрузки снижает продажи на 7%.",
+  },
+  {
+    icon: Shield,
+    title: "Независимость от платформ",
+    description:
+      "В отличие от Tilda, Wix или других конструкторов — вы не платите ежемесячную подписку и не теряете сайт при отключении аккаунта. Ваш бизнес защищён от рисков платформ.",
+  },
+  {
+    icon: Layers,
+    title: "Масштабируемая архитектура",
+    description:
+      "Joomla позволяет добавлять любой функционал: личный кабинет, каталог товаров, интеграции с CRM и платёжными системами. Сайт растёт вместе с вашим бизнесом без переделок с нуля.",
   },
 ]
 
 export function ServicesSection() {
   return (
-    <section id="services" className="py-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+    <section className="py-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-primary/5 animate-pulse" />
 
       <div className="container mx-auto max-w-7xl relative z-10">
         <div className="inline-block mb-4 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-semibold mx-auto block w-fit">
-          Наша экспертиза
+          Технологическое преимущество
         </div>
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-4 text-balance">
-          В чем мы <span className="text-primary">сильны</span>
+          Почему не <span className="text-primary">конструктор</span>
         </h2>
         <p className="text-center text-muted-foreground mb-12 max-w-3xl mx-auto text-pretty leading-relaxed text-lg">
-          От концепции до запуска — мы трансформируем ваши цифровые амбиции в мощные онлайн-решения, приносящие результат.
+          Конструктор даёт шаблон. Мы строим цифровую архитектуру — независимую, быструю и готовую к росту вашего бизнеса.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {services.map((service, index) => (
+          {advantages.map((item, index) => (
             <Card
               key={index}
               className="group hover:border-primary transition-all duration-300 hover:shadow-xl hover:-translate-y-2 bg-background/50 backdrop-blur-sm"
             >
               <CardHeader>
                 <div className="mb-4 inline-flex p-3 rounded-lg bg-primary/10 text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-300 group-hover:scale-110 group-hover:rotate-3">
-                  <service.icon className="h-6 w-6" />
+                  <item.icon className="h-6 w-6" />
                 </div>
-                <CardTitle className="text-xl group-hover:text-primary transition-colors">{service.title}</CardTitle>
+                <CardTitle className="text-xl group-hover:text-primary transition-colors">{item.title}</CardTitle>
               </CardHeader>
               <CardContent>
-                <CardDescription className="text-base leading-relaxed">{service.description}</CardDescription>
+                <CardDescription className="text-base leading-relaxed">{item.description}</CardDescription>
               </CardContent>
             </Card>
           ))}
