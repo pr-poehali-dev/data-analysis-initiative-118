@@ -5,12 +5,12 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
             <h3 className="text-xl font-bold mb-2">
-              <span className="text-primary">SWD</span> | Digital Grant
+              <span className="text-primary">ИТМВЕБ</span> | Digital Grant
             </h3>
             <p className="text-sm text-muted-foreground leading-relaxed mb-2">
               Профессиональные сайты на Joomla + Gridbox за счёт банковского гранта.
             </p>
-            <p className="text-xs text-muted-foreground">© 2025 SWD. Все права защищены.</p>
+            <p className="text-xs text-muted-foreground">© 2025 ИТМВЕБ. Все права защищены.</p>
           </div>
 
           <div>
